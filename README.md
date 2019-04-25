@@ -33,11 +33,11 @@ yarn add xy-divider
 
 ## 使用
 
-```ts
+```tsx
 import React from "react";
 import ReactDOM from "react-dom";
-import XyDivider from "xy-divider";
-ReactDOM.render(<XyDivider />, container);
+import Divider from "xy-divider";
+ReactDOM.render(<Divider dashed={true}>分割线</Divider>, container);
 ```
 
 ## 开发
