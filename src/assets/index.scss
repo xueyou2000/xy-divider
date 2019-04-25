@@ -1,0 +1,104 @@
+$DividerPrefixCls: "xy-divider";
+$--text-color-dark: rgba(0, 0, 0, 0.65);
+
+.#{$DividerPrefixCls} {
+    font-family: Monospaced Number, Chinese Quote, -apple-system, BlinkMacSystemFont, Segoe UI, Roboto, PingFang SC, Hiragino Sans GB, Microsoft YaHei, Helvetica Neue, Helvetica, Arial, sans-serif;
+    font-size: 14px;
+    line-height: 1.5;
+    color: $--text-color-dark;
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+    list-style: none;
+    background: #e8e8e8;
+}
+
+.#{$DividerPrefixCls}-dashed {
+    background: none;
+    border-top: 1px dashed #e8e8e8;
+
+    &.#{$DividerPrefixCls}-with-text {
+        border: none;
+
+        &:before,
+        &:after {
+            box-sizing: border-box;
+            content: "";
+            display: table-cell;
+            position: relative;
+            top: 50%;
+            width: 50%;
+            border-top: 1px dashed #e8e8e8;
+            transform: translateY(50%);
+        }
+    }
+}
+
+.#{$DividerPrefixCls}-type-vertical {
+    margin: 0 8px;
+    display: inline-block;
+    height: 0.9em;
+    width: 1px;
+    vertical-align: middle;
+    position: relative;
+    top: -0.06em;
+}
+.#{$DividerPrefixCls}-type-horizontal {
+    display: block;
+    height: 1px;
+    width: 100%;
+    margin: 24px 0;
+    clear: both;
+}
+
+.#{$DividerPrefixCls}-with-text {
+    display: table;
+    white-space: nowrap;
+    text-align: center;
+    background: transparent;
+    font-weight: 500;
+    color: rgba(0, 0, 0, 0.85);
+    font-size: 16px;
+    margin: 16px 0;
+
+    &:before,
+    &:after {
+        box-sizing: border-box;
+        content: "";
+        display: table-cell;
+        position: relative;
+        top: 50%;
+        width: 50%;
+        border-top: 1px solid #e8e8e8;
+        transform: translateY(50%);
+    }
+
+    &.#{$DividerPrefixCls}-orientation-left {
+        font-size: 14px;
+        &:before {
+            top: 50%;
+            width: 5%;
+        }
+        &:after {
+            top: 50%;
+            width: 95%;
+        }
+    }
+
+    &.#{$DividerPrefixCls}-orientation-right {
+        font-size: 14px;
+        &:before {
+            top: 50%;
+            width: 95%;
+        }
+        &:after {
+            top: 50%;
+            width: 5%;
+        }
+    }
+
+    .#{$DividerPrefixCls}-inner-text {
+        display: inline-block;
+        padding: 0 24px;
+    }
+}
