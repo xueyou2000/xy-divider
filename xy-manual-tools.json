@@ -1,0 +1,22 @@
+[
+    {
+        "name": "Simple",
+        "title": "简单使用",
+        "desc": "不带任何参数, 显示水平分割线。"
+    },
+    {
+        "name": "DashedLine",
+        "title": "虚线",
+        "desc": "设置 dashed 参数启用虚线样式。"
+    },
+    {
+        "name": "Text",
+        "title": "带文本",
+        "desc": "设置 children 能够让分割线带文本标题。"
+    },
+    {
+        "name": "VerticalDivider",
+        "title": "垂直分割线",
+        "desc": "设置 type 为 vertical 显示垂直分割线。"
+    }
+]
