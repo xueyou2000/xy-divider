@@ -16,7 +16,7 @@
 
 ```bash
 # yarn
-yarn add xy-divider classNames
+yarn add xy-divider
 ```
 
 ## 使用例子
